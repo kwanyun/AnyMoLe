@@ -5,9 +5,10 @@
 
 
 ### How to run code (in short)
-1.  Before start, using 2 sec context motion and keyframes, render frame
-2. First, Inference video (ICAdapt+inference). Next, Train Scene-specific joint estimator
-3. Last, DO Motion video mimicking 
+Before start, render frames from 2 sec context motion and target keyframes
+1. Inference video (ICAdapt+inference). 
+2. Train Scene-specific joint estimator
+3. Last, Dd Motion video mimicking 
 
 
 Here, Motion video mimicking is a new terminology for adopting character motion from video generation model.
