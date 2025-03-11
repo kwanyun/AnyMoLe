@@ -8,7 +8,7 @@
 Before start, render frames from 2 sec context motion and target keyframes
 1. Inference video (ICAdapt+inference). 
 2. Train Scene-specific joint estimator
-3. Last, Dd Motion video mimicking 
+3. Last, Do Motion video mimicking 
 
 
 Here, Motion video mimicking is a new terminology for adopting character motion from video generation model.
@@ -17,7 +17,7 @@ Here, Motion video mimicking is a new terminology for adopting character motion 
 
 
 ### Step 1 : ICAdapt and inference.
-    python run_anymole.py --frames_dir "$dir" --text_input --ICAdapt --interp--onlykey 750 --stage 2
+    python run_anymole.py --frames_dir "$dir" --text_input --ICAdapt --interp --onlykey 750 --stage 2
 
 ### Step 2 : Train Scene-specific joint estimator.
     python pose3d_train.py
