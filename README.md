@@ -1,6 +1,10 @@
-## ___***AnyMoLe: Any Character Motion Inbetweening via Video Diffusion Prior***___
+## ___***[CVPR2025] AnyMoLe: Any Character Motion Inbetweening via Video Diffusion Prior***___
 <!-- ![](./assets/logo_long.png#gh-light-mode-only){: width="50%"} -->
 <!-- ![](./assets/logo_long_dark.png#gh-dark-mode-only=100x20) -->
+
+###  [[Project Page](https://kwanyun.github.io/AnyMoLe_page/)] [[Paper](https://arxiv.org/abs/2503.08417)]
+
+
 ### ! IMPORTANT ! Current version is not finalized. Full code will be released soon.
 
 
