@@ -6,14 +6,8 @@
 
 
 
-https://github.com/user-attachments/assets/5afc54f4-4487-497e-b4c0-4fdd24b86dd0
-
 https://github.com/user-attachments/assets/eddcbd71-cac7-4513-855b-f05860e6ab1f
 
-https://github.com/user-attachments/assets/9217d4cf-d8b6-413e-a774-56e4cb58ec4b
-
-
-https://github.com/user-attachments/assets/9fa12f2e-4164-42ea-a27f-254083ce0fee
 
 
 
@@ -48,6 +42,7 @@ ex) bash run_example.sh Amy Amy_careful_Walking_input
 
 
 
+https://github.com/user-attachments/assets/9217d4cf-d8b6-413e-a774-56e4cb58ec4b
 
 
 ## :arrow_forward: How to run code step by step (slower version)
