@@ -18,8 +18,8 @@ We tested on single Nvidia A6000 GPU (48GB VRAM).
 
 AnyMoLe requires fine-tuning Video Diffusion model and training scene-specific joint estimator, thus using lower memory GPU needs modifications such as lower batch size.
 
-### pretrained checkpoint from dynamiCrafter [checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt) (Mandatory)
-### pretrained checkpoint from eilev [checkpoint](https://huggingface.co/kpyu/eilev-blip2-opt-2.7b) (Recommended)
+### pretrained checkpoint from [DynamiCrafter checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt) (Mandatory)
+### pretrained checkpoint from [Eilev checkpoint](https://huggingface.co/kpyu/eilev-blip2-opt-2.7b) (Recommended)
 
 ## Get data from context and key frames
 Before start, render frames from 2 sec context motion and target keyframes
@@ -54,3 +54,14 @@ Here, Motion video mimicking is a new terminology for adopting character motion 
     python motion_video_mimicking.py --char_name {Character} --motion_path {Motion} --kpt_pjt
 
 
+#### We would like to thank Dynamicrafter for open-source video interpolation model
+
+## Citation
+```
+@article{yun2025anymole,
+  title={AnyMoLe: Any Character Motion In-betweening Leveraging Video Diffusion Models},
+  author={Yun, Kwan and Hong, Seokhyeon and Kim, Chaelin and Noh, Junyong},
+  journal={arXiv preprint arXiv:2503.08417},
+  year={2025}
+}
+```
