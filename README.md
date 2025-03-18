@@ -4,9 +4,10 @@
 
 ### [[Project Page](https://kwanyun.github.io/AnyMoLe_page/)] [[Paper](https://arxiv.org/abs/2503.08417)]
 
+### Overview of AnyMoLe
+![overview_alpha (1)](https://github.com/user-attachments/assets/ad9606fd-8ed2-46ec-9b12-4ecec7ac4285)
 
 
-https://github.com/user-attachments/assets/eddcbd71-cac7-4513-855b-f05860e6ab1f
 
 
 
