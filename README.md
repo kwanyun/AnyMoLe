@@ -5,7 +5,7 @@
 ### [[Project Page](https://kwanyun.github.io/AnyMoLe_page/)] [[Paper](https://arxiv.org/abs/2503.08417)]
 
 
-### Be-aware current version still need some correction and clean-ups
+### Be aware current version still need some correction and clean-ups
 
 ## :gear: Install Environment via Anaconda (Recommended)
     conda create -n anymole python==3.10.0
