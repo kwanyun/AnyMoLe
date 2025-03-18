@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "eilev"
+version = "0.1.0"
+description = "EILEV: Efficient In-Context Learning in Vision-Language Models for Egocentric Videos"
+authors = ["Peter Yu <2057325+yukw777@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "eilev" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.0"
+pytorchvideo = "^0.1.5"
+torchvision = "^0.15.1"
+transformers = "^4.28.1"
+datasets = "^2.11.0"
+accelerate = "^0.21.0"
+wandb = "^0.15.1"
+imageio = "^2.28.0"
+opencv-python = "^4.7.0.72"
+deepspeed = "^0.12.3"
+torchmetrics = "^0.11.4"
+nltk = "^3.8.1"
+sentence-transformers = "^2.2.2"
+
+# jupyter
+jupyter = { version = "^1.0.0", optional = true }
+matplotlib = { version = "^3.7.1", optional = true }
+seaborn = { version = "^0.13.0", optional = true }
+statsmodels = { version = "^0.14.0", optional = true }
+
+# demo
+gradio = { version = "^4.7.1", optional = true }
+salesforce-lavis = { git = "git@github.com:salesforce/LAVIS.git", rev = "59273f651b9bffb193d1b12a235e909e9f826dda", optional = true }
+
+# hf
+huggingface-hub = { version = "^0.17.0", optional = true }
+spacy = "^3.7.2"
+en-core-web-sm = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"}
+
+[tool.poetry.extras]
+jupyter = ["jupyter", "matplotlib", "seaborn", "statsmodels"]
+demo = ["gradio", "salesforce-lavis"]
+hf = ["huggingface-hub"]
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.2"
+flake8 = "^6.0.0"
+mypy = "^1.2.0"
+black = "^23.3.0"
+ipython = "^8.12.0"
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.isort]
+# wandb by default creates a directory called "wandb"
+# which confuses isort, causing it to classify wandb
+# as a first-party library.
+known_third_party = ["wandb"]
+
+[tool.codespell]
+skip = "scripts/ego4d/eval-data/*.csv"

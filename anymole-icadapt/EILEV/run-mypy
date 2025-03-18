@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+poetry run mypy --follow-imports=silent --ignore-missing-imports --show-column-numbers "$@"

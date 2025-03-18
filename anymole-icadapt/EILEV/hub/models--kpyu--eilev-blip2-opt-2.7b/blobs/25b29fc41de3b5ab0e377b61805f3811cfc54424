@@ -1,0 +1,39 @@
+{
+  "_name_or_path": "/nfs/turbo/coe-chaijy/kpyu/eilev-checkpoints/eilev-blip2-opt-2.7b-ego4d/",
+  "architectures": [
+    "VideoBlipForConditionalGeneration"
+  ],
+  "initializer_factor": 1.0,
+  "initializer_range": 0.02,
+  "model_type": "blip-2",
+  "num_query_tokens": 32,
+  "qformer_config": {
+    "classifier_dropout": null,
+    "model_type": "blip_2_qformer"
+  },
+  "text_config": {
+    "_name_or_path": "facebook/opt-2.7b",
+    "activation_dropout": 0.0,
+    "architectures": [
+      "OPTForCausalLM"
+    ],
+    "ffn_dim": 10240,
+    "hidden_size": 2560,
+    "model_type": "opt",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 32,
+    "prefix": "</s>",
+    "torch_dtype": "float16",
+    "word_embed_proj_dim": 2560
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.35.2",
+  "use_decoder_only_language_model": true,
+  "vision_config": {
+    "dropout": 0.0,
+    "initializer_factor": 1.0,
+    "model_type": "blip_2_vision_model",
+    "num_channels": 3,
+    "projection_dim": 512
+  }
+}
