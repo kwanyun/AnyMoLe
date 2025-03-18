@@ -13,7 +13,7 @@
 
 
 
-### Be aware current version still need some correction and clean-ups
+### Be aware current version still need some correction and clean-ups. If there are any suggestion for environment setting, let us know for future users
 
 ## :gear: Install Environment via Anaconda (Recommended)
     conda create -n anymole python==3.10.0
@@ -26,14 +26,17 @@ We tested on single Nvidia A6000 GPU (48GB VRAM).
 
 AnyMoLe requires fine-tuning Video Diffusion model and training scene-specific joint estimator, thus using lower memory GPU needs modifications such as lower batch size.
 
-### pretrained checkpoint from [DynamiCrafter checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt) (Mandatory)
-### pretrained checkpoint from [Eilev checkpoint](https://huggingface.co/kpyu/eilev-blip2-opt-2.7b) (Recommended)
+### pretrained checkpoint from [DynamiCrafter checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt) (Required)
+### pretrained checkpoint from [Eilev checkpoint](https://huggingface.co/kpyu/eilev-blip2-opt-2.7b) (Recommended, but can be replaced with your text input)
 
 ## Get data from context and key frames
-Before start, render frames from 2 sec context motion and target keyframes
+Before start, render frames from 2 sec context motion and target keyframes.
 
 To get data from context and key frames, use `visualizer.ipynb` by rendering.
-If your motion data does not match with our setting, refer to `data/generate_from_fbx.py` and `data/refine_for_anymole_if_needed.py`
+
+When rendering with `visualizer.ipynb`, ensure the **full motion is within the camera view** and **sufficiently large** to be clearly noticeable.
+
+If your motion data does not match with our data setting, refer to `data/generate_from_fbx.py` and `data/refine_for_anymole_if_needed.py`
 
 
 ## :fast_forward: How to run code in one step (faster version)
