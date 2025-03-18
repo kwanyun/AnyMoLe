@@ -18,8 +18,8 @@ We tested on single Nvidia A6000 GPU (48GB VRAM).
 
 AnyMoLe requires fine-tuning Video Diffusion model and training scene-specific joint estimator, thus using lower memory GPU needs modifications such as lower batch size.
 
-### pretrained checkpoint from dynamiCrafter [checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt)
-
+### pretrained checkpoint from dynamiCrafter [checkpoint](https://huggingface.co/Doubiiu/DynamiCrafter_512_Interp/blob/main/model.ckpt) (Mandatory)
+### pretrained checkpoint from eilev [checkpoint](https://huggingface.co/kpyu/eilev-blip2-opt-2.7b) (Recommended)
 
 ## Get data from context and key frames
 Before start, render frames from 2 sec context motion and target keyframes
