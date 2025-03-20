@@ -34,7 +34,7 @@ Before start, render frames from 2 sec context motion and target keyframes.
 
 To get data from context and key frames, use `visualizer.ipynb` by rendering.
 
-When rendering with `visualizer.ipynb`, ensure the **full motion is within the camera view** and **sufficiently large** to be clearly noticeable.
+:exclamation: When rendering with `visualizer.ipynb`, ensure the **full motion is within the camera view** and **sufficiently large** to be clearly noticeable.
 
 If your motion data does not match with our data setting, refer to `data/generate_from_fbx.py` and `data/refine_for_anymole_if_needed.py`
 
