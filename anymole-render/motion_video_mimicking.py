@@ -28,7 +28,7 @@ dino_extractor = DinoVal(device='cuda')
 dino_extractor3d = DinoVal3D(device='cuda')
 
 
-def optimize(args,quats2optimize, pos2optmize,interpolated_pos,target_images,model,renderer,kpt,feature,j_level=False):
+def optimize(args,quats2optimize, pos2optmize,interpolated_pos,target_images,model,renderer,kpt,feature):
     
     prev_quats = quats2optimize.clone().detach()
     quats2optimize.requires_grad = True
