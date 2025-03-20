@@ -219,7 +219,7 @@ if __name__ == "__main__":
         ##### forward optimization #####
         if numframe==args.img_fps//2:
             quats2optimize_forward = slerp(quats2optimize_forward, quats2optimize_backward, 0.3) #if middle of two key frames, init considering both
-        opt_quat, opt_pos = optimize(args,quats2optimize_forward, pos2optmize_forward,interpolated_pos_forward,target_images_forward,model,renderer,kpt,feature,j_level=joint_levels)
+        opt_quat, opt_pos = optimize(args,quats2optimize_forward, pos2optmize_forward,interpolated_pos_forward,target_images_forward,model,renderer,kpt,feature)
         opt_quat = normalize_quaternion(opt_quat)
 
         deformation_target_quats[numframe::args.img_fps] = opt_quat.clone().detach()
@@ -228,7 +228,7 @@ if __name__ == "__main__":
         ##### backward optimization #####
         if numframe==args.img_fps//2:
             quats2optimize_backward = slerp(quats2optimize_backward, opt_quat, 0.3) #if middle of two key frames, init considering both
-        opt_quat, opt_pos = optimize(args,quats2optimize_backward, pos2optmize_backward,interpolated_pos_backward,target_images_backward,model,renderer,kpt,feature,j_level=joint_levels)
+        opt_quat, opt_pos = optimize(args,quats2optimize_backward, pos2optmize_backward,interpolated_pos_backward,target_images_backward,model,renderer,kpt,feature)
         opt_quat = normalize_quaternion(opt_quat)
 
         deformation_target_quats[args.img_fps-numframe::args.img_fps] = opt_quat.clone().detach()
